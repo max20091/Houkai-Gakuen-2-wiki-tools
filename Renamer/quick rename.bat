@@ -9,7 +9,7 @@ if not exist "%CD%\2 1 item\" mkdir "%CD%\2 1 item\"
 if not exist "%CD%\2 2 icon\" mkdir "%CD%\2 2 icon\"
 if not exist "%CD%\2 3 pocket\" mkdir "%CD%\2 3 pocket\"
 :RENAME
-echo Drag and drop a file or enter file name with keyboard.
+echo Enter file name with keyboard.
 set /P file=Enter item name:
 set /P star=Enter number of stars:
 FOR %%f in ("%CD%\1 1 item\*.png") DO REN "%CD%\1 1 item\*.png" "%file% %star% Stars.png"
