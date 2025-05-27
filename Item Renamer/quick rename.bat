@@ -1,6 +1,5 @@
-::set /p stig=stig
-::echo %~n1
 @echo off
+setlocal enabledelayedexpansion
 if exist "%CD%\2 3 pocket\" goto :RENAME
 if not exist "%CD%\1 1 item\" mkdir "%CD%\1 1 item\"
 if not exist "%CD%\1 2 icon\" mkdir "%CD%\1 2 icon\"

@@ -1,3 +1,5 @@
+@echo off
+setlocal enabledelayedexpansion
 if not exist "%CD%\input\" mkdir "%CD%\input\"
 if not exist "%CD%\output\" mkdir "%CD%\output\"
 for %%f in ("%CD%\Input\*1 Star icon.png") do Magick convert -composite -gravity center "%CD%\Backgrounds\Green.png" "%%f" "%CD%\Output\%%~nf.png"

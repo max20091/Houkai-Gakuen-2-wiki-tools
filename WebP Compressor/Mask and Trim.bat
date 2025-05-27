@@ -1,4 +1,5 @@
 @echo off
+setlocal enabledelayedexpansion
 if not exist "%CD%\input\" mkdir %CD%\input\
 if not exist "%CD%\output\" mkdir %CD%\output\
 if not exist "%CD%\alpha\" mkdir %CD%\alpha\

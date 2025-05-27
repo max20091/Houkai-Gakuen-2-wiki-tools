@@ -1,4 +1,5 @@
 @echo off
+setlocal enabledelayedexpansion
 if not exist "%CD%\allequipmentfigures\" echo allequipmentfigures not found
 if not exist "%CD%\allequipmenticons\" echo allequipmenticons not found
 echo Enter file ID with keyboard.
